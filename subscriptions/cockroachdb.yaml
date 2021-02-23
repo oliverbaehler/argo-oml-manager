@@ -5,7 +5,7 @@ metadata:
   namespace: operators
 spec:
   ## Manual Approval 
-  approval: Manual
+  installPlanApproval: Manual
   name: cockroachdb
   channel: stable-5.x
   source: operatorhubio-catalog

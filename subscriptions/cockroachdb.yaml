@@ -1,0 +1,20 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: Subscription
+metadata:
+  name: cockroach-operator
+  namespace: operators
+spec:
+  ## Manual Approval 
+  approval: Manual
+  name: cockroachdb
+  channel: stable-5.x
+  source: operatorhubio-catalog
+  sourceNamespace: olm
+  config:
+    resources:
+      requests:
+        memory: "64Mi"
+        cpu: "250m"
+      limits:
+        memory: "128Mi"
+        cpu: "500m"

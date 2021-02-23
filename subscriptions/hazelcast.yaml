@@ -1,14 +1,14 @@
 apiVersion: operators.coreos.com/v1alpha1
 kind: Subscription
 metadata:
-  name: cockroach-operator
+  name: hazelcast-operator
   namespace: operators
 spec:
-  ## Manual Approval 
+  ## Manual Approve from 0.3.0
   installPlanApproval: Manual
-  startingCSV: 1.1.0
-  name: cockroachdb
-  channel: stable-5.x
+  startingCSV: 0.3.0
+  name: hazelcast-operator
+  channel: alpha
   source: operatorhubio-catalog
   sourceNamespace: olm
   config:

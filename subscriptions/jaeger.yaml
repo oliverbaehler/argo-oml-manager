@@ -1,16 +1,15 @@
 apiVersion: operators.coreos.com/v1alpha1
 kind: Subscription
 metadata:
-  name: redis-operator
+  name: jaeger-operator
   namespace: operators
 spec:
-  name: redis-operator
+  installPlanApproval: Manual
+  name: jaeger-operator
   channel: stable
   source: operatorhubio-catalog
   sourceNamespace: olm
   config:
-    podAnnotations:
-      "my.custom.annotations": "test"
     resources:
       requests:
         memory: "64Mi"

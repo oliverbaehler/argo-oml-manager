@@ -9,8 +9,6 @@ spec:
   source: operatorhubio-catalog
   sourceNamespace: olm
   config:
-    podAnnotations:
-      "my.custom.annotations": "test"
     resources:
       requests:
         memory: "64Mi"
